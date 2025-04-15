@@ -1,4 +1,4 @@
-package org.hyppar;
+package org.hyppar.servicestarter;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

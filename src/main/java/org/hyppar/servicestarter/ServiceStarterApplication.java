@@ -1,4 +1,4 @@
-package org.hyppar;
+package org.hyppar.servicestarter;
 
 
 import org.springframework.boot.SpringApplication;
