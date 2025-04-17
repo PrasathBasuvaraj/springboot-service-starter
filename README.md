@@ -83,3 +83,35 @@ _**Clone, customize, and go build awesome stuff 🚀**_
 
 - Swagger UI: http://localhost:8080/swagger-ui.html
 - OpenAPI JSON: http://localhost:8080/v3/api-docs
+
+## 🐳 Docker Usage
+
+#### 🔨 Build Docker Image
+
+```bash
+./gradlew clean build
+
+docker build -t springboot-service-starter .
+
+docker build --platform linux/amd64 -t springboot-service-starter .
+```
+
+#### 🚀 Run the Docker Container
+
+```bash
+docker run -p 8080:8080 springboot-service-starter
+```
+
+#### 📦 Stop and Remove Container
+
+```bash
+docker ps        # to get container ID
+docker stop <container-id>
+docker rm <container-id>
+```
+
+#### 🧪 Verify it's running
+
+Visit: [http://localhost:8080/actuator/health](http://localhost:8080/actuator/health)
+Visit: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
+
