@@ -57,6 +57,18 @@ jacocoTestReport {
     }
 }
 
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                minimum = 0.80 // 80% minimum coverage required
+            }
+        }
+    }
+}
+
+check.dependsOn jacocoTestCoverageVerification
+
 tasks.withType(JavaCompile) {
     options.annotationProcessorGeneratedSourcesDirectory = file("$buildDir/generated/sources/annotationProcessor/java/main")
 }
