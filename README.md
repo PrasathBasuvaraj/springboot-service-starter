@@ -86,6 +86,20 @@ _**Clone, customize, and go build awesome stuff 🚀**_
 - Swagger UI: http://localhost:8080/swagger-ui.html
 - OpenAPI JSON: http://localhost:8080/v3/api-docs
 
+## Test Coverage
+
+Run Tests and Generate Coverage Report
+
+```bash
+./gradlew clean test jacocoTestReport
+```
+
+After running the command, open the generated HTML report:
+
+```bash
+open build/reports/jacoco/test/html/index.html
+```
+
 ## 🐳 Docker Usage
 
 #### 🔨 Build Docker Image

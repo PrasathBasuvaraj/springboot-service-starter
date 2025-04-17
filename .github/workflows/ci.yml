@@ -27,3 +27,12 @@ jobs:
 
       - name: Run tests
         run: ./gradlew test
+
+      - name: Generate Jacoco Coverage Report
+        run: ./gradlew jacocoTestReport
+
+      - name: Upload Coverage Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-report
+          path: build/reports/jacoco/test/html
