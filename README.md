@@ -15,6 +15,7 @@ architecture.
 - 🧪 Testing Skeleton – With basic structure for unit and integration tests
 - ⚙️ Profile-based Configuration – Local development with H2 database
 - 🔄 Layered Architecture – DTO → Mapper → Service → Entity → Repository
+- ⚙️ GitHub Actions – Automated build and test workflow triggered on every push and PR
 
 ## 🚀 Getting Started
 
@@ -60,6 +61,7 @@ All responses follow a standard structure:
 - MapStruct
 - OpenAPI / springdoc-openapi
 - JUnit + MockMvc
+- GutHub Actions
 
 ## 📌 Future Enhancements (Optional)
 
